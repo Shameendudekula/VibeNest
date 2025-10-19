@@ -1,0 +1,32 @@
+/* style.css */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+/* Add these to your existing style.css */
+.hero {
+  background: url('../assets/Images/hero-bg.jpg') center/cover no-repeat;
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.cta-button {
+  @apply bg-indigo-600 text-white px-6 py-3 rounded-full hover:bg-indigo-700 transition;
+}
+
+.section-title {
+  @apply text-3xl font-bold text-center mb-8;
+}
+
+.footer {
+  @apply bg-gray-900 text-white text-center p-4 mt-12;
+}
+/* Add to your CSS */
+.card:hover img {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
