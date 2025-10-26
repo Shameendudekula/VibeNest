@@ -3,29 +3,64 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>VibeNest – Your Creative Chill Space</title>
+  
+  <!-- Primary Title & Meta -->
+  <title>VibeNest – Best Chill Zone Café & Student Content Hub Near Campus</title>
+  <meta name="description" content="VibeNest: The ultimate chill zone café for college students! Relax, create content, book events, and connect with friends.">
+  <meta name="keywords" content="VibeNest, chill zone café, student hangout, content creation, events, college café, gallery, booking">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://vibe-nest-ten.vercel.app/">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="VibeNest – Chill Zone Café & Student Content Hub"/>
+  <meta property="og:description" content="Relax, create, and connect at VibeNest, the coolest student café near campus."/>
+  <meta property="og:image" content="https://vibe-nest-ten.vercel.app/assets/Images/logo.png"/>
+  <meta property="og:url" content="https://vibe-nest-ten.vercel.app/"/>
+  <meta property="og:type" content="website"/>
 
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Google Fonts (optional aesthetic touch) -->
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- JSON-LD Structured Data for Google -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CafeOrCoffeeShop",
+    "name": "VibeNest",
+    "image": "https://vibe-nest-ten.vercel.app/assets/Images/logo.png",
+    "description": "VibeNest – Chill Zone Café & Student Content Hub near campus for students to relax, create content, and connect.",
+    "url": "https://vibe-nest-ten.vercel.app/",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Your Street Address",
+      "addressLocality": "Your City",
+      "addressRegion": "Your State",
+      "postalCode": "Your Pincode",
+      "addressCountry": "IN"
+    },
+    "sameAs": [
+      "https://www.instagram.com/",
+      "https://www.youtube.com/"
+    ]
+  }
+  </script>
+
 </head>
 <body class="font-[Poppins] bg-white text-gray-800">
 
   <!-- Navbar -->
   <header class="bg-white shadow-md sticky top-0 z-50">
-     <!-- Logo + Brand Name -->
-   
     <div class="max-w-10xl mx-auto px-4 py-4 flex justify-between items-center">
-       <div class="flex items-center space-x-2">
-    <img src="/assets/Images/logo.png" alt="VibeNest Logo" class="h-16 w-auto object-contain"/>
-
-    <h1 class="text-2xl font-bold text-indigo-600">VibeNest</h1>
-     </div>
+      <div class="flex items-center space-x-2">
+        <img src="/assets/Images/logo.png" alt="VibeNest Logo – Creative Chill Zone Café & Student Content Hub" class="h-16 w-auto object-contain"/>
+        <h1 class="text-2xl font-bold text-indigo-600">VibeNest</h1>
+      </div>
       <nav class="space-x-4">
         <a href="index.html" class="hover:text-indigo-500">Home</a>
         <a href="about.html">About</a>
@@ -40,9 +75,11 @@
 
   <!-- Hero Section -->
   <section class="relative h-[100vh] bg-cover bg-center" style="background-image: url('/assets/Images/hero.png');">
+    <!-- Hidden SEO image -->
+    <img src="/assets/Images/hero.png" alt="Students relaxing and creating content at VibeNest café" class="hidden"/>
     <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center text-center text-white">
       <div>
-        <h2 class="text-4xl md:text-6xl font-bold mb-4"> Relax.  Create.  Connect.</h2>
+        <h2 class="text-4xl md:text-6xl font-bold mb-4">Relax. Create. Connect.</h2>
         <p class="mb-6 text-lg">Your Creative Chill Zone Near Campus!</p>
         <div class="space-x-4">
           <a href="booking.html" class="bg-indigo-500 hover:bg-indigo-600 px-5 py-3 rounded text-white">Book a Table</a>
@@ -54,9 +91,9 @@
 
   <!-- What is VibeNest -->
   <section class="py-16 px-6 text-center bg-gray-50">
-    <h3 class="text-3xl font-semibold mb-4">What is VibeNest?</h3>
+    <h2 class="text-3xl font-bold mb-4">What is VibeNest?</h2>
     <p class="max-w-2xl mx-auto text-lg text-gray-600">
-      A unique blend of a student-friendly chill zone and content creation space — where your creativity, fun, and community spirit come alive.
+      A unique student-friendly chill zone and content creation space where creativity, fun, and community spirit come alive.
     </p>
   </section>
 
@@ -72,7 +109,7 @@
     </div>
   </footer>
 
-  <!-- JS (if needed) -->
+  <!-- JS -->
   <script src="js/script.js"></script>
 </body>
 </html>
