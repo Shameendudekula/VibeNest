@@ -1,10 +1,22 @@
-<!-- contact.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact | VibeNest</title>
+  
+  <!-- SEO Metadata -->
+  <title>Contact – VibeNest | Student Chill Zone & Creative Hub</title>
+  <meta name="description" content="Get in touch with VibeNest to book your spot, collaborate, or learn more about our chill zone and creative hub for students.">
+  <meta name="keywords" content="VibeNest contact, student chill zone, content hub, book space, college events">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://vibe-nest-ten.vercel.app/contact.html">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="Contact VibeNest – Student Chill Zone & Creative Hub"/>
+  <meta property="og:description" content="Reach out to VibeNest for bookings, collaborations, or inquiries about our student creative hub."/>
+  <meta property="og:image" content="https://vibe-nest-ten.vercel.app/assets/Images/logo.png"/>
+  <meta property="og:url" content="https://vibe-nest-ten.vercel.app/contact.html"/>
+  <meta property="og:type" content="website"/>
 
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -14,10 +26,13 @@
 
   <!-- AOS Animation -->
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="font-[Poppins] bg-white text-gray-800">
 
-  <!-- Header (Optional if reused globally) -->
+  <!-- Navbar -->
   <header class="bg-indigo-600 text-white py-4">
     <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
       <h1 class="text-xl font-bold">VibeNest</h1>
@@ -25,18 +40,19 @@
         <a href="index.html" class="hover:underline">Home</a>
         <a href="services.html" class="hover:underline">Services</a>
         <a href="gallery.html" class="hover:underline">Gallery</a>
+        <a href="booking.html" class="hover:underline">Booking</a>
       </nav>
     </div>
   </header>
 
   <!-- Contact Section -->
   <section class="py-16 px-4 max-w-5xl mx-auto" data-aos="fade-up">
-    <h2 class="text-3xl font-bold text-center text-indigo-600 mb-6">📩 Get in Touch</h2>
+    <h2 class="text-3xl font-bold text-center text-indigo-600 mb-6">📩 Get in Touch with VibeNest</h2>
     <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
       Whether you want to book a space, collaborate, or just say hi — we’d love to hear from you!
     </p>
 
-    <form class="grid md:grid-cols-2 gap-6 bg-gray-100 p-6 rounded-lg shadow-md">
+    <form class="grid md:grid-cols-2 gap-6 bg-gray-100 p-6 rounded-lg shadow-md" aria-label="Contact form">
       <input type="text" placeholder="Full Name" class="p-3 rounded border focus:outline-none focus:ring-2 focus:ring-indigo-400" required>
       <input type="email" placeholder="Email Address" class="p-3 rounded border focus:outline-none focus:ring-2 focus:ring-indigo-400" required>
       <input type="text" placeholder="Subject" class="md:col-span-2 p-3 rounded border focus:outline-none focus:ring-2 focus:ring-indigo-400">
@@ -51,10 +67,10 @@
       <h3 class="text-2xl font-bold text-center text-indigo-600 mb-6">📍 Our Location</h3>
       <div class="w-full h-72 rounded-lg overflow-hidden shadow-md">
         <iframe 
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.619197595563!2d77.60105567475307!3d10.989092489213827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8559465891d0b%3A0x6e7f49b62e7d2b78!2sAnna%20University%20Regional%20Campus!5e0!3m2!1sen!2sin!4v1624010121234!5m2!1sen!2sin"
-  width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen loading="lazy">
-</iframe>
-
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.619197595563!2d77.60105567475307!3d10.989092489213827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8559465891d0b%3A0x6e7f49b62e7d2b78!2sAnna%20University%20Regional%20Campus!5e0!3m2!1sen!2sin!4v1624010121234!5m2!1sen!2sin"
+          width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen loading="lazy"
+          title="VibeNest Location Map" aria-label="VibeNest Location on Google Maps">
+        </iframe>
       </div>
     </div>
   </section>

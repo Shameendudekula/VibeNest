@@ -3,7 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Booking – VibeNest</title>
+  
+  <!-- Page Title & Description for SEO -->
+  <title>Book Your Spot – VibeNest | Chill Zone & Content Hub</title>
+  <meta name="description" content="Reserve your spot at VibeNest for chill sessions, indoor games, VR experiences, or content shoots. Flexible slots available for students near campus.">
+  <meta name="keywords" content="VibeNest booking, student chill zone reservation, indoor games booking, VR experience booking, reel shoot reservation, college fest booking">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://vibe-nest-ten.vercel.app/booking.html">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="Book Your Spot at VibeNest – Chill Zone & Content Hub"/>
+  <meta property="og:description" content="Reserve your chill session, content shoot, or private group hangout at VibeNest. Flexible student-friendly booking slots."/>
+  <meta property="og:image" content="https://vibe-nest-ten.vercel.app/assets/Images/logo.png"/>
+  <meta property="og:url" content="https://vibe-nest-ten.vercel.app/booking.html"/>
+  <meta property="og:type" content="website"/>
 
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -20,7 +33,7 @@
   <header class="bg-white shadow-md sticky top-0 z-50">
     <div class="max-w-10xl mx-auto px-4 py-4 flex justify-between items-center">
       <div class="flex items-center space-x-2">
-        <img src="/assets/Images/logo.png" alt="VibeNest Logo" class="h-16 w-auto object-contain"/>
+        <img src="/assets/Images/logo.png" alt="VibeNest Logo – Chill Zone & Content Hub" class="h-16 w-auto object-contain"/>
         <h1 class="text-2xl font-bold text-indigo-600">VibeNest</h1>
       </div>
       <nav class="space-x-4">
@@ -39,35 +52,34 @@
   <section class="py-16 px-6 bg-gray-50 text-center">
     <h2 class="text-4xl font-bold mb-6 text-indigo-600">Book Your Spot</h2>
     <p class="max-w-2xl mx-auto text-lg text-gray-700 mb-10">
-      Reserve a time for your chill session, content shoot, or private group hangout. We’ve got flexible slots just for you!
+      Reserve a time for your chill session, content shoot, or private group hangout. Flexible slots available for students.
     </p>
 
     <div class="max-w-2xl mx-auto bg-white shadow-lg rounded-lg p-8">
       <form class="bg-white shadow-lg rounded-lg p-8 max-w-xl mx-auto" data-aos="fade-up">
-  <div class="mb-4">
-    <label class="block font-semibold mb-1">Name</label>
-    <input type="text" class="w-full border p-2 rounded" required />
-  </div>
-  <div class="mb-4">
-    <label class="block font-semibold mb-1">Service</label>
-    <select class="w-full border p-2 rounded">
-      <option>Café Table</option>
-      <option>Game Zone</option>
-      <option>Reel Shoot</option>
-      <option>College Fest</option>
-    </select>
-  </div>
-  <div class="mb-4">
-    <label class="block font-semibold mb-1">Date & Time</label>
-    <input type="datetime-local" class="w-full border p-2 rounded" />
-  </div>
-  <div class="mb-4">
-    <label class="block font-semibold mb-1">Upload Student ID</label>
-    <input type="file" class="w-full" />
-  </div>
-  <button class="cta-button w-full mt-4">Submit Booking</button>
-</form>
-
+        <div class="mb-4">
+          <label class="block font-semibold mb-1">Name</label>
+          <input type="text" class="w-full border p-2 rounded" required />
+        </div>
+        <div class="mb-4">
+          <label class="block font-semibold mb-1">Service</label>
+          <select class="w-full border p-2 rounded">
+            <option>Café Table</option>
+            <option>Game Zone</option>
+            <option>Reel Shoot</option>
+            <option>College Fest</option>
+          </select>
+        </div>
+        <div class="mb-4">
+          <label class="block font-semibold mb-1">Date & Time</label>
+          <input type="datetime-local" class="w-full border p-2 rounded" />
+        </div>
+        <div class="mb-4">
+          <label class="block font-semibold mb-1">Upload Student ID</label>
+          <input type="file" class="w-full" />
+        </div>
+        <button class="cta-button w-full mt-4">Submit Booking</button>
+      </form>
     </div>
   </section>
 
